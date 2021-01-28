@@ -1,4 +1,6 @@
 /ROMS
 Cargo.lock
 /target
-/*.dll
+/bin/*.dll
+/bin/gnu-mingw
+/bin/msvc
