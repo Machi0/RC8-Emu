@@ -12,7 +12,7 @@ fn main() {
     let mut scale: u32 = 10;
     let mut delay: u128 = 4;
 
-    if args.len() == 3 {
+    if args.len() == 4 {
         scale = args[2].parse().unwrap();
         delay = args[3].parse().unwrap();
     }
