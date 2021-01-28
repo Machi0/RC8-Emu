@@ -10,4 +10,3 @@ opt-level = 3
 
 [dependencies]
 lib = { path = "../lib" }
-sdl2 = "0.34.3"

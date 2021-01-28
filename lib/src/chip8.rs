@@ -73,7 +73,7 @@ impl Chip8 {
     pub fn interpret(&mut self) -> () {
         let opcode: u16 = 
             (self.memory[self.pc as usize] as u16) << 8 | self.memory[(self.pc + 1) as usize] as u16;
-        println!("{:#4x?}", opcode);
+        //println!("{:#4x?}", opcode);
 
         match opcode & 0xF000 {
             0x0000 =>
@@ -414,7 +414,7 @@ impl Chip8 {
         }
 
         if self.sound_timer > 0 {
-            println!("BEEP");
+            //println!("BEEP");
             self.sound_timer -= 1;
         }
     }
